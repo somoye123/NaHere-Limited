@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Post Data Details</h1>
+          <form>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="arrivalTime">Arrival_Time</label>
+                        <input type="time" name="arrivalTime" class="form-control" id="arrivalTime" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exitTime">Exit_Time</label>
+                        <input type="time" name="exitTime" class="form-control" id="exitTime" required>
+                      </div>
+                    <div class="form-group col-md-6">
+                        <label for="dateOfInterview">Date_Of_Interview</label>
+                        <input type="date" class="form-control" id="dateOfInterview" name="dateOfInterview">
+                    </div>
+                </div>
+              <button type="button" id="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <h2 class="my-2">Data From Api</h2>
+
+        <table id="usersList">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Arrival Time</th>
+                <th>Exit Time</th>
+                <th>Date Of Interview</th>
+            </tr>
+            <tbody>
+            </tbody>
+      </table>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
